@@ -8,11 +8,11 @@ using Persistence.Data;
 
 namespace Application.Repository
 {
-    public class RefreshRepository : GenericRepository<RefreshToken>, IRefreshTokenRepository
+    public class RefreshTokenRepository : GenericRepository<RefreshToken>, IRefreshTokenRepository
     {
         private readonly FarmaciaAppContext _context;
 
-        public RefreshRepository(FarmaciaAppContext context) : base(context)
+        public RefreshTokenRepository(FarmaciaAppContext context) : base(context)
         {
             _context = context;
         }
