@@ -15,9 +15,9 @@ public class UserService : IUserService
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly JWT _jwt;
-    private readonly IPasswordHasher<Persona> _passwordHasher;
+    private readonly IPasswordHasher<User> _passwordHasher;
 
-    public UserService(IUnitOfWork unitOfWork, IOptions<JWT> jwt, IPasswordHasher<Persona> passwordHasher)
+    public UserService(IUnitOfWork unitOfWork, IOptions<JWT> jwt, IPasswordHasher<User> passwordHasher)
     {
         _unitOfWork = unitOfWork;
         _jwt = jwt.Value;
